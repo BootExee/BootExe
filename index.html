@@ -1,57 +1,170 @@
-
 <!DOCTYPE html>
-<html lang='tr'>
-  <head>
-    <meta charset='UTF-8'>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MicroBootExe'nin bütün sosyal medya hesapları bu websitede bulunmaktadır. Resmi websitesi https://bootexee.github.io/BootExe/'dir ">
-    <meta name="keywords" content="BootExe, Micro, MicroBootExe, microbootexe, bootexe, BOOTEXE, MİCROBOOTEXE>
+    <meta name="keywords" content="BootExe, Micro, MicroBootExe, microbootexe, bootexe, BOOTEXE, MİCROBOOTEXE">
     <meta name="author" content="MicroBootExe">
-    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/878663949577494538/929140582113226824/adamm.png?ex=66acb5d9&is=66ab6459&hm=ce3c6da2eda9b857dcf6b0fd4519626f73ff1b3787e2f888808a0a3372201037&">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans&display=swap"
-    rel="stylesheet">
-    <link rel='stylesheet' href='stlye.css'>
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1067034053234135042/1271787452574597150/static_2.png?ex=66b89bdd&is=66b74a5d&hm=08db632e5ded75f6abfeab994f6a9d14ce748084d9b28f2e1073669a58dbb4b4&">
+    <link href="https://cdn.discordapp.com/attachments/1067034053234135042/1271784879717224558/image.png?ex=66b89977&is=66b747f7&hm=30add977712ae9c2a1d608e05927b59eb6713e5a97ec8e55925faae1c1d373cd&" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
     <title>MicroBootExe</title>
-  </head>
-  <body>
-    <div class='triangle'></div>
-    <div class='container'>
-      <div class='space'></div>
-      <div class='header--box'>
-      <header class='header'>
-        <div class='header__chat-box'>
-          <div class='header__chat-box--behind'>
-          <div class='header__chat-box--front'>
-            <h1>BEN</h1>
-          </div>
-          </div>
+
+    <meta property="og:title" content="MicroBootExe">
+    <meta property="og:description" content="Redez'in bütün sosyal medya hesapları bu websitede bulunmaktadır.">
+    <meta property="og:image" content="İSTEK">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="İSTEK">
+    <meta property="og:type" content="website">
+
+    <style>
+        .audio-player {
+            display: none; 
+        }
+
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3; 
+            border-top: 8px solid #3498db; 
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .background-video-night, .background-video-day {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <video class="background-video-night" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/5818973/5818973-uhd_2560_1440_24fps.mp4" type="video/mp4">
+    </video>
+
+    <video class="background-video-day" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/3974178/3974178-hd_1280_720_60fps.mp4" type="video/mp4">
+    </video>
+
+    <div class="triangle"></div>
+    <div class="container">
+        <div class="space"></div>
+        <div class="header--box">
+            <header class="header">
+                <div class="header__chat-box">
+                    <div class="header__chat-box--behind"></div>
+                    <div class="header__chat-box--front">
+                        <h1>Tıkla</h1>
+                    </div>
+                </div>
+                <div class="header__icon-box">
+                    <img src="https://cdn.discordapp.com/attachments/1067034053234135042/1271787673261969408/WhatsApp_Gorsel_2024-08-10_saat_133001_131545a3_1-photoaidcom-cropped.jpg?ex=66b89c11&is=66b74a91&hm=fe7047d17ddecfc7d4c09b903ed9b3165df4fec25dc5f41b644b00da5954b2b9&" alt="profilfoto" class="header__icon"/>
+                </div>
+            </header>
         </div>
-        <div class='header__icon-box'>
-          <img src='https://cdn.discordapp.com/attachments/878663949577494538/929140317129699372/gg.png?ex=66acb59a&is=66ab641a&hm=e29f8b0fde62c3ee6e1d00392c3cde6650730407a0c534a5bbf368bcabf55796&' alt='profilfoto'
-          class='header__icon'/>
+        <div class="links-container">
+            <ul>
+                <li class='right'><a class='link' href='https://www.twitch.tv/MicroBootExe'>Twitch</a>
+                </li>
+                <li class='right'><a class='link' href='https://www.instagram.com/MicroBootExe/'>İnstagram</a>
+                  </li>
+                <li class='left'><a class='link' href='https://kick.com/MicroBootExe'>Kick</a>
+                  </li>
+                <li class='right'><a class='link' href='https://www.youtube.com/@MicroBoot'>YouTube</a>
+                  </li>
+                <li class='left'><a class='link' href='https://www.tiktok.com/@MicroBootExe'>TikTok</a>
+                  </li>
+                  <li class='right'><a class='link' href='https://discord.gg/F98ZmTaM'>Discord</a>
+                  </li>
+            </ul>
         </div>
-      </header>
-      </div>
-    <div class='links-container'>
-
-
-
-      <li class='right'><a class='link' href='https://www.twitch.tv/MicroBootExe'>Twitch</a>
-      </li>
-      <li class='right'><a class='link' href='https://www.instagram.com/MicroBootExe/'>İnstagram</a>
-        </li>
-      <li class='left'><a class='link' href='https://kick.com/MicroBootExe'>Kick</a>
-        </li>
-      <li class='right'><a class='link' href='https://www.youtube.com/@MicroBoot'>YouTube</a>
-        </li>
-      <li class='left'><a class='link' href='https://www.tiktok.com/@MicroBootExe'>TikTok</a>
-        </li>
-        <li class='right'><a class='link' href='https://discord.gg/F98ZmTaM'>Discord</a>
-        </li>
+        <div class="user-info-box">
+            <div class="user-info">
+                <h2>MicroBootExe.com</h2>
+            </div>
+        </div>
+        <div class="audio-player">
+            <audio id="audio-player" controls>
+                <source src="AT-cm_ptLLH7fEUJlcU-wxEIbo-Q (mp3cut.net) (1).mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider">
+                <span class="sun">&#x2600;</span>
+                <span class="moon">&#9790;</span>
+            </span>
+        </label>
     </div>
-    <div class='user-info-box'>
-      <div class='user-info'><h2>MicroBootExe'ye aitidir</h2></div>
-    </div>
-    </div>
-  </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audioPlayer = document.getElementById('audio-player');
+            const iconBox = document.querySelector('.header__icon-box');
+            const themeToggle = document.getElementById('theme-toggle');
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            const backgroundVideoNight = document.querySelector('.background-video-night');
+            const backgroundVideoDay = document.querySelector('.background-video-day');
+
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            themeToggle.checked = (currentTheme === 'dark');
+
+            const updateBackgroundVideo = () => {
+                const newTheme = themeToggle.checked ? 'dark' : 'light';
+                backgroundVideoNight.style.display = (newTheme === 'dark') ? 'block' : 'none';
+                backgroundVideoDay.style.display = (newTheme === 'dark') ? 'none' : 'block';
+            };
+
+            themeToggle.addEventListener('change', () => {
+                const newTheme = themeToggle.checked ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateBackgroundVideo();
+            });
+
+            iconBox.addEventListener('click', () => {
+                audioPlayer.currentTime = 0; 
+                audioPlayer.play(); 
+            });
+
+            const loaderWrapper = document.querySelector('.loader-wrapper');
+            window.addEventListener('load', () => {
+                loaderWrapper.style.display = 'none';
+            });
+
+            updateBackgroundVideo();
+        });
+    </script>
+</body>
 </html>
