@@ -27,7 +27,6 @@
     --link-text: #fdfcfc;
     --link-hover-bg: url('https://example.com/night-link-hover-bg.jpg');
     --audio-player-bg: #2b2929;
-    --redEZ-color: #00f35102;
     --toggle-bg: #2e2828;
     --toggle-thumb: #413949;
   }
@@ -42,7 +41,6 @@
     --link-text: #0410b8;
     --link-hover-bg: url('https://example.com/day-link-hover-bg.jpg');
     --audio-player-bg: #2b2929;
-    --redEZ-color: #f8bf02f5;
     --toggle-bg: #ddd;
     --toggle-thumb: #fff;
   }
